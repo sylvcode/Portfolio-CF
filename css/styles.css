@@ -219,10 +219,9 @@ table {
   text-align: center;
 }
 
-.grid_item.item{
-  max-width: 500px;
-  max-height: 500px;
-  box-shadow:var(--box-shadow);
+.grid_item {
+   background:var(--secondary-color);
+   box-shadow: var(--box-shadow);
 }
 
 @media all and (max-width: 500px) {
