@@ -221,6 +221,11 @@ table {
 
 }
 
+.grid_item.item{
+  max-width: 500px;
+  max-height: 500px;
+}
+
 @media all and (max-width: 500px) {
   .grid {
     grid-template-columns: 1fr;
