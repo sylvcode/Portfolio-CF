@@ -286,14 +286,14 @@ table {
 
 @keyframes color-change {
   from {
-    fill: #E6B980;
+    fill: #A8ADFF;
   }
 
   to {
-    fill: #E84A5F;
+    fill: #E7EAF6;
   }
 }
-.flower {
+.desktop {
    animation-duration: 4s;
    animation-name: color-change;
    animation-iteration-count: infinite;
@@ -317,9 +317,7 @@ table {
 }
 
 svg {
-  max-width: 1200px;
-  max-height: 700px;
-
+text-align: right;
 }
 
 /* Contact Form */
