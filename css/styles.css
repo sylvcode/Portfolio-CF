@@ -18,7 +18,7 @@
 
 body {
 background: var(--background-color);
-font-family: 'Poppins',
+font-family: 'Roboto',
 sans-serif;
 
 }
@@ -29,7 +29,7 @@ h2,
 h3,
 h4 {
 color: var(--dark-grey);
-font-family: 'Poppins',
+font-family: 'Roboto',
 sans-serif;
 text-align: center;
 font-size: var(--big-font);
@@ -37,7 +37,7 @@ font-size: var(--big-font);
 }
 
 p {
-font-family: 'Poppins',
+font-family: 'Roboto',
 sans-serif;
 font-size: var(--medium-font);
 }
@@ -45,8 +45,8 @@ font-size: var(--medium-font);
 /* External fonts styling*/
 
 .t-font {
-font-family: 'Tangerine',
-cursive;
+font-family: 'Poppins',
+sans-serif;
 font-size: 36px;
 }
 
@@ -171,6 +171,7 @@ button:hover {
 
 .about {
   text-align: center;
+ 
 }
 
 li {
