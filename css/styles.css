@@ -207,23 +207,22 @@ table {
 
 /* Grids design */
 
+
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
- 
-  
+
   }
 
-.grid_item {
- background:var(--secondary-color);
- box-shadow:var(--box-shadow);
-
+.grid {
+  text-align: center;
 }
 
 .grid_item.item{
   max-width: 500px;
   max-height: 500px;
+  box-shadow:var(--box-shadow);
 }
 
 @media all and (max-width: 500px) {
@@ -335,8 +334,8 @@ svg {
 
 .contact-me {
  padding: 10px;
-  max-width: 500px;
-  margin: 0 auto;
+ max-width: 500px;
+ margin: 0 auto;
  
 }
 
