@@ -304,21 +304,19 @@ table {
 
 @keyframes circle-move {
   from {
-    transform: translate(0, 50px);
+    transform: translate(10, 10x);
   }
 
   to {
-    transform: translate(200px, 50px);
+    transform: translate(20px, 20px);
   }
 }
 
 .circle {
-  animation: 30s circle-move infinite alternate linear;
+  animation: 30s circle-move alternate;
 }
 
-svg {
-text-align: right;
-}
+
 
 /* Contact Form */
 
