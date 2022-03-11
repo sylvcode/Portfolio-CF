@@ -292,7 +292,7 @@ table {
     fill: #E7EAF6;
   }
 }
-.desktop {
+.chair {
    animation-duration: 4s;
    animation-name: color-change;
    animation-iteration-count: infinite;
