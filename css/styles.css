@@ -1,4 +1,7 @@
 
+/*------------------------------------*\
+  #ROOT AND #BODY
+\*------------------------------------*/
 
 :root {
   --primary-color: #645fce;
@@ -15,14 +18,12 @@
   --box-shadow: 0px 0px 40px 20px rgba(0, 0, 0, 0.05);
 }
 
-
 body {
 background: var(--background-color);
 font-family: 'Roboto',
 sans-serif;
 
 }
-
 
 h1,
 h2,
@@ -42,7 +43,9 @@ sans-serif;
 font-size: var(--medium-font);
 }
 
-/* External fonts styling*/
+/*------------------------------------*\
+  #EXTERNAL-FONT-STYLING
+\*------------------------------------*/
 
 .t-font {
 font-family: 'Poppins',
@@ -55,9 +58,9 @@ span {
   cursive;
 }
 
-
-/* Links a="href... */
-
+/*------------------------------------*\
+  #LINKS 
+\*------------------------------------*/
 
 a {
   color:var(--primary-color);
@@ -68,7 +71,9 @@ a:active {
     color: var(--link_active);
 }
 
-/* Menu / Nav in header */
+/*------------------------------------*\
+  #NAVIGATION IN HEADER
+\*------------------------------------*/
 
 .page-header_item {
   color: var(--primary-color);
@@ -80,7 +85,6 @@ a:active {
   
 }
 
-
 .navigation-list__item:hover,
 .navigation-list__item:active {
   color: var(--link_active);
@@ -91,8 +95,10 @@ a:active {
  
 }
 
+/*------------------------------------*\
+  #PROFILEPICTURE AND #BANNER ON FRONTPAGE
+\*------------------------------------*/
 
-/* profile pic & banner on homepage */
 
 
 .profile {
@@ -113,13 +119,18 @@ a:active {
 
 }
 
-/* Button on front page*/
+/*------------------------------------*\
+  #BUTTON ON FRONTPAGE
+\*------------------------------------*/
 
 .btn-cnt {
   margin-bottom: 15px;
 }
 
-/* Button in HTML form and on front page*/
+/*------------------------------------*\
+  #BUTTON-HTML-FORM ON FRONTPAGE
+\*------------------------------------*/
+
 
 button {
    border: 2px solid var(--primary-color);
@@ -143,7 +154,9 @@ button:hover {
 }
 
 
-/* Logo and Header  */
+/*------------------------------------*\
+  #LOGO AND #HEADER
+\*------------------------------------*/
 
 .logo {
   max-height: 200px;
@@ -171,7 +184,9 @@ button:hover {
 
 }
 
-/* About page styling */
+/*------------------------------------*\
+  #ABOUT PAGE
+\*------------------------------------*/
 
 .about {
   text-align: center;
@@ -196,7 +211,9 @@ th {
   padding-bottom: 10px;
 }
 
-/* Footer stylings */
+/*------------------------------------*\
+  #FOOTER
+\*------------------------------------*/
 
 .page-footer {
   clear: both;
@@ -210,23 +227,24 @@ th {
   box-sizing: border-box;
 }
 
-/* Grids design */
+/*------------------------------------*\
+  #GRIDS
+\*------------------------------------*/
 
 
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-
-  }
-
-.grid {
+  grid-gap: 10px;
   text-align: center;
+  
 }
+
 
 .grid_item {
    background:var(--secondary-color);
    box-shadow: var(--box-shadow);
+   
 }
 
 @media all and (max-width: 500px) {
@@ -257,7 +275,9 @@ th {
 
 }
 
-/* Additional Buttons */
+/*------------------------------------*\
+  #ADDITIONAL-BUTTONS
+\*------------------------------------*/
 
 .button {
    border: 2px solid var(--primary-color);
@@ -286,7 +306,9 @@ th {
   opacity: 0.8;
 }
 
-/* Animation image */
+/*------------------------------------*\
+  #SVG ANIMATED
+\*------------------------------------*/
 
 @keyframes color-change {
   from {
@@ -321,7 +343,9 @@ th {
 }
 
 
-/* Contact Form */
+/*------------------------------------*\
+  #CONTACT-FORM
+\*------------------------------------*/
 
 .contact-form {
     padding: 50px;
@@ -350,3 +374,4 @@ textarea {
   margin-bottom: 16px;
   resize: vertical;
 }
+
