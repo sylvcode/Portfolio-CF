@@ -289,10 +289,10 @@ table {
   }
 
   to {
-    fill: #E7EAF6;
+    fill: #EACDA3;
   }
 }
-.shirt {
+.circle {
    animation-duration: 4s;
    animation-name: color-change;
    animation-iteration-count: infinite;
@@ -301,18 +301,18 @@ table {
    
 }
 
-@keyframes codes-move {
+@keyframes cloud-move {
   from {
-    transform: translate(0, 50px);
+    transform: translate(-200px, -300px);
   }
 
   to {
-    transform: translate(200px, 50px);
+    transform: translate(0, -300px);
   }
 }
 
-.codes {
-  animation: 30s codes-move infinite alternate linear;
+.cloud {
+  animation: 20s cloud-move infinite alternate linear;
 }
 
 
