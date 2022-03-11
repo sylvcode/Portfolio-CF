@@ -6,16 +6,18 @@
 */
 
 
-
 body {
   background: #fff;
+  font-family: 'Roboto',
+    sans-serif;
 
 }
 
 
 h1 {
   color: undefined;
-
+  font-family: 'Roboto',
+    sans-serif;
   text-align: center;
   font-size: 34px;
 
@@ -24,8 +26,8 @@ h1 {
 
 h2 {
   color: undefined;
-  font-family: 'Poiret One',
-    cursive;
+  font-family: 'Roboto',
+    sans-serif;
   text-align: center;
   font-size: 34px;
 
@@ -34,8 +36,8 @@ h2 {
 
 h3 {
   color: undefined;
-  font-family: 'Poiret One',
-    cursive;
+  font-family: 'Roboto',
+    sans-serif;
   text-align: center;
   font-size: 34px;
 
@@ -44,26 +46,32 @@ h3 {
 
 h4 {
   color: undefined;
-  font-family: 'Poiret One',
-    cursive;
+  font-family: 'Roboto',
+    sans-serif;
   text-align: center;
   font-size: 34px;
 
 }
 
 p {
-  font-family: 'Poiret One',
-    cursive;
+  font-family: 'Roboto',
+    sans-serif;
   font-size: 24px;
 }
 
 /* External fonts styling*/
 
 .t-font {
-  font-family: 'Tangerine',
-    cursive;
-
+  font-family: 'Poppins',
+    sans-serif;
+  font-size: 30px;
 }
+
+span {
+  font-family: 'Great Vibes',
+    cursive;
+}
+
 
 /* Links a="href... */
 
@@ -86,6 +94,7 @@ a:active {
   display: inline-block;
   margin-left: 10px;
 
+
 }
 
 
@@ -100,9 +109,8 @@ a:active {
 
 .navigation-list li {
   display: inline;
+
 }
-
-
 
 
 /* profile pic & banner on homepage */
@@ -113,6 +121,8 @@ a:active {
   max-width: 700px;
   margin: 0 auto;
   text-align: center;
+  -webkit-box-shadow: 0px 0px 40px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 40px 20px rgba(0, 0, 0, 0.05);
 
 }
 
@@ -128,27 +138,24 @@ a:active {
 /* Button on front page*/
 
 .btn-cnt {
-   margin-bottom: 15px;
-    border-radius: 4px;
-    color: white;
-    text-decoration: none;
-    font-size: 22px;
-    line-height: 27px;
-    padding: 15px 30px;
-
+  margin-bottom: 15px;
 }
 
 /* Button in HTML form and on front page*/
 
 button {
   border: 2px solid #645fce;
-  border-radius: 3px;
+  border-radius: 4px;
   background-color: #645fce;
   color: #fff;
   font-size: 18px;
   -webkit-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
+  line-height: 18px;
+  padding: 15px 30px;
+  -webkit-box-shadow: 0px 0px 40px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 40px 20px rgba(0, 0, 0, 0.05);
 
 }
 
@@ -199,6 +206,7 @@ button:hover {
 
 .about {
   text-align: center;
+
 }
 
 li {
@@ -210,6 +218,14 @@ table {
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.skill {
+  text-align: left;
+}
+
+th {
+  padding-bottom: 10px;
 }
 
 /* Footer stylings */
@@ -224,8 +240,6 @@ table {
   -ms-flex-direction: column;
   flex-direction: column;
   text-align: center;
-  
-
 }
 
 
@@ -236,17 +250,24 @@ table {
 
 /* Grids design */
 
+
 .grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
+
+}
+
+.grid {
+  text-align: center;
 }
 
 .grid_item {
   background: #E7EAF6;
-
+  -webkit-box-shadow: 0px 0px 40px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 40px 20px rgba(0, 0, 0, 0.05);
 }
 
 @media all and (max-width: 500px) {
@@ -285,27 +306,27 @@ table {
 /* Additional Buttons */
 
 .button {
-  border-radius: 3px;
+  border: 2px solid #645fce;
+  border-radius: 4px;
   background-color: #645fce;
   color: #fff;
   font-size: 18px;
-  border: none;
-  display: inline-block;
-  font-family: inherit;
-  text-decoration: none;
-  padding: 10px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  -webkit-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -webkit-transition-property: opacity;
-  -o-transition-property: opacity;
-  transition-property: opacity;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  line-height: 22px;
+  padding: 15px 30px;
+  -webkit-box-shadow: 0px 0px 40px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 40px 20px rgba(0, 0, 0, 0.05);
+
 }
 
 .cv {
   text-align: center;
-  padding: 30px 0px 60px;
+  padding: 60px 0px 60px;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
 
 .button:hover,
@@ -316,27 +337,29 @@ table {
   opacity: 0.8;
 }
 
+/* Animation image */
+
 @-webkit-keyframes color-change {
   from {
-    fill: #E6B980;
+    fill: #A8ADFF;
   }
 
   to {
-    fill: #E84A5F;
+    fill: #EACDA3;
   }
 }
 
 @keyframes color-change {
   from {
-    fill: #E6B980;
+    fill: #A8ADFF;
   }
 
   to {
-    fill: #E84A5F;
+    fill: #EACDA3;
   }
 }
 
-.flower {
+.circle {
   -webkit-animation-duration: 4s;
   animation-duration: 4s;
   -webkit-animation-name: color-change;
@@ -350,36 +373,64 @@ table {
 
 }
 
-@-webkit-keyframes circle-move {
+@-webkit-keyframes cloud-move {
   from {
-    -webkit-transform: translate(0, 50px);
-    transform: translate(0, 50px);
+    -webkit-transform: translate(-200px, -300px);
+    transform: translate(-200px, -300px);
   }
 
   to {
-    -webkit-transform: translate(200px, 50px);
-    transform: translate(200px, 50px);
+    -webkit-transform: translate(0, -300px);
+    transform: translate(0, -300px);
   }
 }
 
-@keyframes circle-move {
+@keyframes cloud-move {
   from {
-    -webkit-transform: translate(0, 50px);
-    transform: translate(0, 50px);
+    -webkit-transform: translate(-200px, -300px);
+    transform: translate(-200px, -300px);
   }
 
   to {
-    -webkit-transform: translate(200px, 50px);
-    transform: translate(200px, 50px);
+    -webkit-transform: translate(0, -300px);
+    transform: translate(0, -300px);
   }
 }
 
-.circle {
-  -webkit-animation: 30s circle-move infinite alternate linear;
-  animation: 30s circle-move infinite alternate linear;
+.cloud {
+  -webkit-animation: 20s cloud-move infinite alternate linear;
+  animation: 20s cloud-move infinite alternate linear;
 }
 
-svg {
-  max-width: 1200px;
+
+/* Contact Form */
+
+.contact-form {
+  padding: 50px;
+  background: #E7EAF6;
+  max-width: 500px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 0px 40px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 40px 20px rgba(0, 0, 0, 0.05);
 }
 
+.contact-me {
+  padding: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
