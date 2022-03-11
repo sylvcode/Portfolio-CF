@@ -190,6 +190,13 @@ table {
    margin-left: auto;
    margin-right: auto;
 }
+.skill {
+  text-align: left;
+}
+
+th {
+  padding-bottom: 10px;
+}
 
 /* Footer stylings */
 
