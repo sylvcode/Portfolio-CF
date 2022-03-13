@@ -203,13 +203,8 @@ table {
    margin-left: auto;
    margin-right: auto;
 }
-.skill {
-  text-align: left;
-}
 
-th {
-  padding-bottom: 10px;
-}
+
 
 /*------------------------------------*\
   #FOOTER
@@ -220,15 +215,19 @@ th {
   display: flex;
   flex-direction: column;
   text-align: center;
+  
 }
 
+.page-footer p {
+  font-size: 18px;
+}
 
 * {
   box-sizing: border-box;
 }
 
 /*------------------------------------*\
-  #GRIDS
+  #GRIDS WORK PAGE
 \*------------------------------------*/
 
 
@@ -276,6 +275,16 @@ th {
 }
 
 /*------------------------------------*\
+  #ICONS ON ABOUT PAGE
+\*------------------------------------*/
+
+.iconify {
+margin: 10px;
+box-shadow: var(--box-shadow);
+}
+
+
+/*------------------------------------*\
   #ADDITIONAL-BUTTONS
 \*------------------------------------*/
 
@@ -296,6 +305,7 @@ th {
   text-align: center;
   padding: 60px 0px 60px;
   transition-duration: 0.5s;
+  
 }
 
 .button:hover,
@@ -341,6 +351,7 @@ th {
 .cloud {
   animation: 20s cloud-move infinite alternate linear;
 }
+
 
 
 /*------------------------------------*\
