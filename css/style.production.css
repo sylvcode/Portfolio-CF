@@ -1,10 +1,6 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.3.6,
-* Autoprefixer: v10.3.1
-* Browsers: last 4 version
-*/
-
+/*------------------------------------*\
+  #ROOT AND #BODY
+\*------------------------------------*/
 
 body {
   background: #fff;
@@ -12,7 +8,6 @@ body {
     sans-serif;
 
 }
-
 
 h1 {
   color: undefined;
@@ -23,7 +18,6 @@ h1 {
 
 }
 
-
 h2 {
   color: undefined;
   font-family: 'Roboto',
@@ -33,7 +27,6 @@ h2 {
 
 }
 
-
 h3 {
   color: undefined;
   font-family: 'Roboto',
@@ -42,7 +35,6 @@ h3 {
   font-size: 34px;
 
 }
-
 
 h4 {
   color: undefined;
@@ -59,7 +51,9 @@ p {
   font-size: 24px;
 }
 
-/* External fonts styling*/
+/*------------------------------------*\
+  #EXTERNAL-FONT-STYLING
+\*------------------------------------*/
 
 .t-font {
   font-family: 'Poppins',
@@ -72,9 +66,9 @@ span {
     cursive;
 }
 
-
-/* Links a="href... */
-
+/*------------------------------------*\
+  #LINKS 
+\*------------------------------------*/
 
 a {
   color: #645fce;
@@ -85,7 +79,9 @@ a:active {
   color: #40356F;
 }
 
-/* Menu / Nav in header */
+/*------------------------------------*\
+  #NAVIGATION IN HEADER
+\*------------------------------------*/
 
 .page-header_item {
   color: #645fce;
@@ -94,14 +90,11 @@ a:active {
   display: inline-block;
   margin-left: 10px;
 
-
 }
-
 
 .navigation-list__item:hover {
   color: #40356F;
 }
-
 
 .navigation-list__item:active {
   color: #40356F;
@@ -112,8 +105,10 @@ a:active {
 
 }
 
+/*------------------------------------*\
+  #PROFILEPICTURE AND #BANNER ON FRONTPAGE
+\*------------------------------------*/
 
-/* profile pic & banner on homepage */
 
 
 .profile {
@@ -121,7 +116,6 @@ a:active {
   max-width: 700px;
   margin: 0 auto;
   text-align: center;
-  -webkit-box-shadow: 0px 0px 40px 20px rgba(0, 0, 0, 0.05);
   box-shadow: 0px 0px 40px 20px rgba(0, 0, 0, 0.05);
 
 }
@@ -135,13 +129,18 @@ a:active {
 
 }
 
-/* Button on front page*/
+/*------------------------------------*\
+  #BUTTON ON FRONTPAGE
+\*------------------------------------*/
 
 .btn-cnt {
   margin-bottom: 15px;
 }
 
-/* Button in HTML form and on front page*/
+/*------------------------------------*\
+  #BUTTON-HTML-FORM ON FRONTPAGE
+\*------------------------------------*/
+
 
 button {
   border: 2px solid #645fce;
@@ -149,12 +148,9 @@ button {
   background-color: #645fce;
   color: #fff;
   font-size: 18px;
-  -webkit-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
   line-height: 18px;
   padding: 15px 30px;
-  -webkit-box-shadow: 0px 0px 40px 20px rgba(0, 0, 0, 0.05);
   box-shadow: 0px 0px 40px 20px rgba(0, 0, 0, 0.05);
 
 }
@@ -168,7 +164,9 @@ button:hover {
 }
 
 
-/* Logo and Header  */
+/*------------------------------------*\
+  #LOGO AND #HEADER
+\*------------------------------------*/
 
 .logo {
   max-height: 200px;
@@ -179,8 +177,6 @@ button:hover {
 }
 
 .page-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   padding: 20px;
@@ -188,21 +184,19 @@ button:hover {
 }
 
 .page-header_item {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 1 200px;
   flex: 0 1 200px;
 
 }
 
 .page-header_item:last-child {
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
   flex-grow: 1;
   text-align: right;
 
 }
 
-/* About page styling */
+/*------------------------------------*\
+  #ABOUT PAGE
+\*------------------------------------*/
 
 .about {
   text-align: center;
@@ -215,64 +209,107 @@ li {
 
 
 table {
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 40px auto 40px auto;
+  width: 50%;
 }
 
-.skill {
-  text-align: left;
-}
-
+table,
 th {
-  padding-bottom: 10px;
+  border: 0.5px solid;
 }
 
-/* Footer stylings */
+.grids {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+  margin: 5px 25px 5px 25px;
+
+}
+
+.grids_item h2 {
+  padding-top: 50px;
+}
+
+.skills {
+  text-align: left;
+
+}
+
+/*------------------------------------*\
+  #ICONS ON ABOUT PAGE
+\*------------------------------------*/
+
+@keyframes swing {
+
+  0%,
+  100% {
+    transform: rotate(-30deg);
+  }
+
+  20% {
+    transform: scale(.95);
+  }
+
+  50% {
+    transform: rotate(30deg);
+  }
+
+  80% {
+    transform: scale(.95);
+  }
+}
+
+.iconify {
+  margin: 20px;
+  grid-gap: 10px;
+  animation: swing 5s infinite ease-in-out;
+
+}
+
+
+/*------------------------------------*\
+  #FOOTER
+\*------------------------------------*/
 
 .page-footer {
   clear: both;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   text-align: center;
+
 }
 
+.page-footer p {
+  font-size: 18px;
+}
 
 * {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* Grids design */
+/*------------------------------------*\
+  #GRIDS WORK PAGE
+\*------------------------------------*/
 
 
 .grid {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-
-}
-
-.grid {
+  grid-gap: 10px;
   text-align: center;
+  margin: 5px 25px 5px 25px;
+
 }
+
 
 .grid_item {
   background: #E7EAF6;
-  -webkit-box-shadow: 0px 0px 40px 20px rgba(0, 0, 0, 0.05);
   box-shadow: 0px 0px 40px 20px rgba(0, 0, 0, 0.05);
+
 }
 
 @media all and (max-width: 500px) {
   .grid {
-    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
 
@@ -283,7 +320,6 @@ th {
 
 @media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
-    -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
   }
 
@@ -303,7 +339,9 @@ th {
 
 }
 
-/* Additional Buttons */
+/*------------------------------------*\
+  #ADDITIONAL-BUTTONS
+\*------------------------------------*/
 
 .button {
   border: 2px solid #645fce;
@@ -311,12 +349,9 @@ th {
   background-color: #645fce;
   color: #fff;
   font-size: 18px;
-  -webkit-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
   line-height: 22px;
   padding: 15px 30px;
-  -webkit-box-shadow: 0px 0px 40px 20px rgba(0, 0, 0, 0.05);
   box-shadow: 0px 0px 40px 20px rgba(0, 0, 0, 0.05);
 
 }
@@ -324,9 +359,8 @@ th {
 .cv {
   text-align: center;
   padding: 60px 0px 60px;
-  -webkit-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
+
 }
 
 .button:hover,
@@ -337,17 +371,9 @@ th {
   opacity: 0.8;
 }
 
-/* Animation image */
-
-@-webkit-keyframes color-change {
-  from {
-    fill: #A8ADFF;
-  }
-
-  to {
-    fill: #EACDA3;
-  }
-}
+/*------------------------------------*\
+  #SVG ANIMATED
+\*------------------------------------*/
 
 @keyframes color-change {
   from {
@@ -360,57 +386,39 @@ th {
 }
 
 .circle {
-  -webkit-animation-duration: 4s;
   animation-duration: 4s;
-  -webkit-animation-name: color-change;
   animation-name: color-change;
-  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
   animation-direction: alternate;
-  -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
 
 }
 
-@-webkit-keyframes cloud-move {
-  from {
-    -webkit-transform: translate(-200px, -300px);
-    transform: translate(-200px, -300px);
-  }
-
-  to {
-    -webkit-transform: translate(0, -300px);
-    transform: translate(0, -300px);
-  }
-}
-
 @keyframes cloud-move {
   from {
-    -webkit-transform: translate(-200px, -300px);
     transform: translate(-200px, -300px);
   }
 
   to {
-    -webkit-transform: translate(0, -300px);
     transform: translate(0, -300px);
   }
 }
 
 .cloud {
-  -webkit-animation: 20s cloud-move infinite alternate linear;
   animation: 20s cloud-move infinite alternate linear;
 }
 
 
-/* Contact Form */
+
+/*------------------------------------*\
+  #CONTACT-FORM
+\*------------------------------------*/
 
 .contact-form {
   padding: 50px;
   background: #E7EAF6;
   max-width: 500px;
   margin: 0 auto;
-  -webkit-box-shadow: 0px 0px 40px 20px rgba(0, 0, 0, 0.05);
   box-shadow: 0px 0px 40px 20px rgba(0, 0, 0, 0.05);
 }
 
@@ -428,7 +436,6 @@ textarea {
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin-top: 6px;
   margin-bottom: 16px;
