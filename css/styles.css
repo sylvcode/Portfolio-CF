@@ -82,7 +82,6 @@ a:active {
   display: inline-block;
   margin-left: 10px;
 
-  
 }
 
 .navigation-list__item:hover,
@@ -199,11 +198,60 @@ li {
 
 
 table {
-   margin-top: 20px;
-   margin-left: auto;
-   margin-right: auto;
+   margin: 40px auto 40px auto;
+   width: 50%;
 }
 
+table, th {
+  border: 0.5px solid;
+}
+
+.grids {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+  margin: 5px 25px 5px 25px;
+  
+}
+
+.grids_item h2 {
+  padding-top: 50px;
+}
+
+.skills {
+  text-align: left;
+  
+}
+/*------------------------------------*\
+  #ICONS ON ABOUT PAGE
+\*------------------------------------*/
+
+@keyframes swing {
+
+  0%,
+  100% {
+    transform: rotate(-30deg);
+  }
+
+  20% {
+    transform: scale(.95);
+  }
+
+  50% {
+    transform: rotate(30deg);
+  }
+
+  80% {
+    transform: scale(.95);
+  }
+}
+
+.iconify {
+  margin: 20px;
+  grid-gap: 10px;
+  animation: swing 5s infinite ease-in-out;
+ 
+}
 
 
 /*------------------------------------*\
@@ -236,6 +284,7 @@ table {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
   text-align: center;
+  margin: 5px 25px 5px 25px;
   
 }
 
@@ -273,16 +322,6 @@ table {
   }
 
 }
-
-/*------------------------------------*\
-  #ICONS ON ABOUT PAGE
-\*------------------------------------*/
-
-.iconify {
-margin: 10px;
-box-shadow: var(--box-shadow);
-}
-
 
 /*------------------------------------*\
   #ADDITIONAL-BUTTONS
