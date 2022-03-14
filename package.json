@@ -2,5 +2,9 @@
   "dependencies": {
     "animate.css": "^4.1.1",
     "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.11.0",
+    "eslint-plugin-css": "^0.6.0"
   }
 }
