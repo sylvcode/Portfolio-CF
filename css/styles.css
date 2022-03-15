@@ -104,7 +104,6 @@ a:active {
 \*------------------------------------*/
 
 .profile_portrait {
-  float: left;
   width: 300px;
   margin: 0px 40px 0px 20px;
   border-radius: 5%;
@@ -133,7 +132,7 @@ button.btn-cnt {
 }
 
 /*------------------------------------*\
-  #BUTTON-HTML-FORM ON FRONTPAGE
+  #BUTTON-HTML-FORM and ON FRONTPAGE
 \*------------------------------------*/
 
 button {
@@ -204,6 +203,10 @@ th {
   font-family: "Poppins", sans-serif;
 }
 
+.skills {
+  text-align: left;
+}
+
 .grids {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -219,17 +222,11 @@ th {
   .grids {
     grid-template-columns: 1fr;
   }
-  h2 {
-    font-size: var(--extra-small-font);
-  }
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
   .grids {
     grid-template-columns: 1fr;
-  }
-  h2 {
-    font-size: var(--extra-small-font);
   }
 }
 
@@ -237,14 +234,8 @@ th {
   .grids {
     grid-gap: 10px;
   }
-  h2 {
-    font-size: var(--extra-small-font);
-  }
 }
 
-.skills {
-  text-align: left;
-}
 /*------------------------------------*\
   #ICONS ON ABOUT PAGE
 \*------------------------------------*/
@@ -275,27 +266,7 @@ th {
 }
 
 /*------------------------------------*\
-  #FOOTER
-\*------------------------------------*/
-
-.page-footer {
-  margin-top: 50px;
-  clear: both;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.page-footer p {
-  font-size: 18px;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-/*------------------------------------*\
-  #GRIDS WORK PAGE
+  #GRIDS ON WORK PAGE
 \*------------------------------------*/
 
 .grid {
@@ -339,6 +310,26 @@ th {
 }
 
 /*------------------------------------*\
+  #FOOTER
+\*------------------------------------*/
+
+.page-footer {
+  margin-top: 50px;
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.page-footer p {
+  font-size: 18px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*------------------------------------*\
   #ADDITIONAL-BUTTONS
 \*------------------------------------*/
 
@@ -370,7 +361,7 @@ th {
 }
 
 /*------------------------------------*\
-  #SVG ANIMATED
+  #SVG IMAGE ANIMATED
 \*------------------------------------*/
 
 @keyframes color-change {
