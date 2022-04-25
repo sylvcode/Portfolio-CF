@@ -1,77 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8"/>
-    <title>Front end developer - Sylvia A</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <title>Front end developer - Sylvia A</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico" sizes="16x16"/>
-    <!-- Normalize CSS-->
-     <link rel="stylesheet" type="text/css" href="css/vendor/normalize.css">
-     <!--My style CSS-->
-     <link rel="stylesheet" type="text/css" href="css/styles.css">
-     <!--Google fonts-->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
+  <!-- Material Icon CDN -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" sizes="16x16" />
+  <!-- Normalize CSS-->
+  <link rel="stylesheet" type="text/css" href="css/vendor/normalize.css">
+  <!--My style CSS-->
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <!--Google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@100;400;500&display=swap"
+    rel="stylesheet">
+</head>
 
-  </head>
-   <body>
-     <!--Header including logo and main menu navigation-->
+<body>
+  <!--Header including logo and main menu navigation-->
   <header class="page-header">
     <!--logo-->
-     <img
-     src="logo/logo.png"
-     alt="logo"
-     class="logo"/>
+    <img src="logo/logo.png" alt="logo" class="logo" />
     <nav class="main-navigation page-header_item">
       <ul role="menubar" class="navigation-list">
-          <li class="active">
-            <a href="index.html" role="menuitem" class="navigation-list__item"> Home </a>
-          </li>
-          <li>
-            <a href="about.html" role="menuitem" class="navigation-list__item"> About</a>
-          </li>
-          <li>
-            <a href="work.html" role="menuitem" class="navigation-list__item"> Work</a>
-          </li>
-          <li>
-            <a href="contact.html" role="menuitem" class="navigation-list__item"> Contact</a>
-          </li>
-        </ul>
-   </nav>
-      </header>
+        <li class="active">
+          <a href="index.html" role="menuitem" class="navigation-list__item"> Home </a>
+        </li>
+        <li>
+          <a href="about.html" role="menuitem" class="navigation-list__item"> About</a>
+        </li>
+        <li>
+          <a href="work.html" role="menuitem" class="navigation-list__item"> Work</a>
+        </li>
+        <li>
+          <a href="contact.html" role="menuitem" class="navigation-list__item"> Contact</a>
+        </li>
+      </ul>
+      <button class="hamburger">
+        <!-- material icons https://material.io/resources/icons/ -->
+        <i class="menuIcon material-icons">menu</i>
+        <i class="closeIcon material-icons">close</i>
+      </button>
+    </nav>
+  </header>
 
-   <div class="row">
-     <div class="column-profile">
-       <h1>Hello I'm Sylvia</h1>
-      <h2>aspiring front end developer</h2>
-       <button class="btn-cnt" type="button" value="contact-me">Contact Me</button>
-      </div>
+  <div class="row">
+    <div class="column-profile">
+      <h1>Hello I'm Sylvia</h1>
+      <h2>Front end developer</h2>
+      <button class="btn-cnt" type="button" value="contact-me">Contact Me</button>
+    </div>
     <div class="column-picture">
-          <img src="images/sylvia.png" class="profile_portrait"  alt="Sylvia"/>
-        </div>
-      </div>
+      <img src="images/sylvia.png" class="profile_portrait" alt="Sylvia" />
+    </div>
+  </div>
 
-<!-- Footer with links to social media profiles -->
-    <footer class="page-footer">
-      <p>You can find me on</p>
-<div class="social-media">
+  <!-- Footer with links to social media profiles -->
+  <footer class="page-footer">
+    <p>You can find me on</p>
+    <div class="social-media">
 
-  <!-- Github logo -->
- <a href="https://github.com/sylvcode" target="_blank"> <span class="iconify" data-icon="icon-park:github" data-width="40"></span> </a>
- 
-  <!-- LinkedIn logo -->
- <a href="https://www.linkedin.com/in/sylviaantons/" target="_blank"> <span class="iconify" data-icon="logos:linkedin-icon" data-width="40"></span></a>
-</div>
+      <!-- Github logo -->
+      <a href="https://github.com/sylvcode" target="_blank"> <span class="iconify" data-icon="icon-park:github"
+          data-width="40"></span> </a>
 
-<p>
-   👩🏻‍💻This website was coded by Sylvia and is <a href="https://github.com/sylvcode" target="_blank"> open source.</a>
-</p>
+      <!-- LinkedIn logo -->
+      <a href="https://www.linkedin.com/in/sylviaantons/" target="_blank"> <span class="iconify"
+          data-icon="logos:linkedin-icon" data-width="40"></span></a>
+    </div>
 
-    </footer>
-    <script src="js/tota11y.min.js"></script>
-    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
-    </body>
+    <p>
+      👩🏻‍💻This website was coded by Sylvia and is <a href="https://github.com/sylvcode" target="_blank"> open
+        source.</a>
+    </p>
+
+  </footer>
+  <script src="js/tota11y.min.js"></script>
+  <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+</body>
+
 </html>
