@@ -5,7 +5,6 @@
   <meta charset="utf-8" />
   <title>Front end developer - Sylvia A</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <!-- Material Icon CDN -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Favicon -->
@@ -19,6 +18,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@100;400;500&display=swap"
     rel="stylesheet">
+
 </head>
 
 <body>
@@ -26,25 +26,26 @@
   <header class="page-header">
     <!--logo-->
     <img src="logo/logo.png" alt="logo" class="logo" />
-    <nav class="main-navigation page-header_item">
-      <ul role="menubar" class="navigation-list">
+    <nav class="navbar page-header_item">
+      <ul role="menubar" class="nav-menu">
         <li class="active">
-          <a href="index.html" role="menuitem" class="navigation-list__item"> Home </a>
+          <a href="index.html" role="menuitem" class="menu_item"> Home </a>
         </li>
         <li>
-          <a href="about.html" role="menuitem" class="navigation-list__item"> About</a>
+          <a href="about.html" role="menuitem" class="menu_item"> About</a>
         </li>
         <li>
-          <a href="work.html" role="menuitem" class="navigation-list__item"> Work</a>
+          <a href="work.html" role="menuitem" class="menu_item"> Work</a>
         </li>
         <li>
-          <a href="contact.html" role="menuitem" class="navigation-list__item"> Contact</a>
+          <a href="contact.html" role="menuitem" class="menu_item"> Contact</a>
         </li>
       </ul>
       <button class="hamburger">
         <!-- material icons https://material.io/resources/icons/ -->
-        <i class="menuIcon material-icons">menu</i>
-        <i class="closeIcon material-icons">close</i>
+        <i class="menuIcon material-icons" id="bar">menu</i>
+        <i class="menuIcon material-icons" id="bar"></i>
+
       </button>
     </nav>
   </header>
@@ -82,6 +83,8 @@
   </footer>
   <script src="js/tota11y.min.js"></script>
   <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+  <script src="js/menuscript.js"></script>
+
 </body>
 
 </html>

@@ -1,7 +1,6 @@
 /*------------------------------------*\
   #ROOT AND #BODY
 \*------------------------------------*/
-
 :root {
   --primary-color: #645fce;
   --secondary-color: #e7eaf6;
@@ -60,11 +59,9 @@ h3 {
 p {
   font-family: "Poppins", sans-serif;
 }
-
 /*------------------------------------*\
   #LINKS 
 \*------------------------------------*/
-
 a {
   color: var(--primary-color);
   text-decoration: var(--no-text-decoration);
@@ -80,11 +77,9 @@ a:active {
     height: auto;
   }
 }
-
 /*------------------------------------*\
   #NAVIGATION IN HEADER
 \*------------------------------------*/
-
 .page-header_item {
   color: var(--primary-color);
   text-decoration: var(--no-text-decoration);
@@ -93,20 +88,62 @@ a:active {
   margin-left: 10px;
 }
 
-.navigation-list__item:hover,
-.navigation-list__item:active {
+.menu_item:hover,
+.menu_item:active {
   color: var(--link_active);
 }
 
-.navigation-list li {
+.nav-menu li {
   display: inline;
   padding-left: 20px;
 }
 
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+#bar {
+  display: block;
+  width: 25;
+  height: 3px;
+  margin: 5px 0;
+  transition: all 0.3s;
+}
+
+@media (max-width: 1024px) {
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active #bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active #bar:nth-child(1) {
+    transform: translate(8px) rotate(45deg);
+  }
+  .hamburger.active #bar:nth-child(3) {
+    transform: translate(-8px) rotate(-45deg);
+  }
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transform: 0.3s;
+  }
+  .menu_item {
+    margin: 16px 0;
+  }
+  .nav-menu.active {
+    left: 0;
+  }
+}
 /*------------------------------------*\
   #PROFILEPICTURE AND #COLUMNS ON FRONTPAGE
 \*------------------------------------*/
-
 .profile_portrait {
   width: 300px;
   margin: 0px 40px 0px 20px;
@@ -134,11 +171,9 @@ a:active {
     display: block;
   }
 }
-
 /*------------------------------------*\
   #BUTTON-HTML-FORM and ON FRONTPAGE
 \*------------------------------------*/
-
 button {
   border: 2px solid var(--primary-color);
   border-radius: 4px;
@@ -157,11 +192,9 @@ button:hover {
   opacity: 0.8;
   cursor: pointer;
 }
-
 /*------------------------------------*\
   #LOGO AND #HEADER
 \*------------------------------------*/
-
 .logo {
   max-height: 200px;
   max-width: 200px;
@@ -183,11 +216,9 @@ button:hover {
   flex-grow: 1;
   text-align: right;
 }
-
 /*------------------------------------*\
   #ABOUT PAGE
 \*------------------------------------*/
-
 .about {
   text-align: center;
 }
@@ -239,11 +270,9 @@ th {
     grid-gap: 10px;
   }
 }
-
 /*------------------------------------*\
   #ICONS ON ABOUT PAGE
 \*------------------------------------*/
-
 @keyframes swing {
   0%,
   100% {
@@ -268,11 +297,9 @@ th {
   grid-gap: 10px;
   animation: swing 5s infinite ease-in-out;
 }
-
 /*------------------------------------*\
   #GRIDS ON WORK PAGE
 \*------------------------------------*/
-
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -312,11 +339,9 @@ th {
     font-size: var(--extra-small-font);
   }
 }
-
 /*------------------------------------*\
   #FOOTER
 \*------------------------------------*/
-
 .page-footer {
   margin-top: 50px;
   clear: both;
@@ -332,11 +357,9 @@ th {
 * {
   box-sizing: border-box;
 }
-
 /*------------------------------------*\
   #ADDITIONAL-BUTTONS
 \*------------------------------------*/
-
 .button {
   border: 2px solid var(--primary-color);
   border-radius: 4px;
@@ -363,11 +386,9 @@ th {
   /* reduces the opacity of the button to 80% */
   opacity: 0.8;
 }
-
 /*------------------------------------*\
   #SVG IMAGE ANIMATED
 \*------------------------------------*/
-
 @keyframes color-change {
   from {
     fill: #a8adff;
@@ -398,11 +419,9 @@ th {
 .cloud {
   animation: 20s cloud-move infinite alternate linear;
 }
-
 /*------------------------------------*\
   #CONTACT-FORM
 \*------------------------------------*/
-
 .contact-form {
   padding: 50px;
   background: var(--secondary-color);
@@ -429,23 +448,4 @@ textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
-}
-
-.hamburger {
-  position: fixed;
-  z-index: 100;
-  top: 1rem;
-  right: 1rem;
-  padding: 4px;
-  border: black solid 1px;
-  background: white;
-  cursor: pointer;
-}
-
-.closeIcon {
-  display: none;
-}
-
-.showMenu {
-  transform: translateY(0);
 }
