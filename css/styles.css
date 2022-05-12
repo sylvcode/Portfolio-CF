@@ -126,6 +126,7 @@ a:active {
   }
   .nav-menu {
     position: fixed;
+    display: flex;
     left: -100%;
     top: 70px;
     gap: 0;
